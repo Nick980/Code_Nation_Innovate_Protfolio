@@ -1,36 +1,36 @@
-#Activity 1
-welcome = "Welcome to Code Nation"
-text_length = len(welcome)
+# #Activity 1
+# welcome = "Welcome to Code Nation"
+# text_length = len(welcome)
 
-def welcome_check():
-    if text_length%2==0:
-        print(f"The legnth of the sentence < {welcome} > is {text_length} characters and this is an even number")
-    else:
-        print(f"The legnth of the sentence < {welcome} > is {text_length} characters and this is an odd number")
+# def welcome_check():
+#     if text_length%2==0:
+#         print(f"The legnth of the sentence < {welcome} > is {text_length} characters and this is an even number")
+#     else:
+#         print(f"The legnth of the sentence < {welcome} > is {text_length} characters and this is an odd number")
 
-welcome_check()
+# welcome_check()
 
 
 #Activity 2
-# import string
-# alphabet_string = string.ascii_uppercase
-# alphabet_list = list(alphabet_string)
+import string
+alphabet_string = string.ascii_uppercase
+alphabet_list = list(alphabet_string)
 
-# for i in alphabet_list:
-#     print(i, end='  ')
-# print("\n")
+for i in alphabet_list:
+    print(i, end='  ')
+print("\n")
 
-# def letter_num():
-#     user_num = input("Please enter a number 1 to 26 to see its corrosponding letter:>   ")
-#     user_num = int(user_num)
-#     user_num -=1
-#     if user_num >=0 and user_num <=26:
-#         print(alphabet_list[user_num])
-#     else:
-#         print("Invalid entry, please try again")
-#         letter_num()
+def letter_num():
+    user_num = input("Please enter a number 1 to 26 to see its corrosponding letter:>   ")
+    user_num = int(user_num)
+    user_num -=1
+    if user_num >=0 and user_num <=26:
+        print(alphabet_list[user_num])
+    else:
+        print("Invalid entry, please try again")
+        letter_num()
 
-# letter_num()
+letter_num()
 
 # #Activity 3
 # space1 = "1"
