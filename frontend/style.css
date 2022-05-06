@@ -6,68 +6,56 @@
 
 body {
     background-color: steelblue;
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+}
+
+p {
+    display: block;
+    /* flex-wrap: wrap;
+    flex-direction: row; */
+    background-color: lightskyblue;
+    text-align: left;
+    padding: 5%;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 50%;
+    border-radius: 15px 50px;
+    box-shadow: 10px 10px;
+    border: 5%;
 }
 
 img {
-    display: block;
+    display: flex;
+    max-width: 30%;
     margin-left: auto;
     margin-right: auto;
-    max-width: 30%;
+}
+
+.box img {
+    box-shadow: 10px 10px;
+    border: 5%;
     border-radius: 15px 50px;
 }
 
 video {
-    display: block;
-    margin: 0px;
+    display: flex;
+    background-color: lightskyblue;
     margin-left: auto;
     margin-right: auto;
-    max-width: 50%;
-    border-radius: 15px 15px 15px 15px;
-}
-
-p{
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    max-width: 50%;
-    background-color: rgb(158, 158, 158);
-    border-radius: 15px 15px;
-    padding: 2.5%;
+    width: 50%;
+    height: 50%;
+    padding: 5%;
     box-shadow: 10px 10px;
+    border-radius: 15px 50px;
+    overflow: hidden;
 }
 
 li {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    max-width: 50%;
-    text-align: center;
-    border-bottom: 10%;
+    list-style-type: none
 }
 
-h1, h2, h3 {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    max-width: 60%; 
-    text-align: center;
-}
-
-footer {
-    display: block;
-    width: 100%;
-    background-color: rgb(158, 158, 158);
-    padding: 2.5%;
-    width: 100vh;
-    text-align: center;
-}
-
-.navbar {
-    display: block;
-    position: fixed;
-    padding-top: 60px;
-    background-color: rgb(158, 158, 158);
-    border-radius: 15px 15px;
-    padding: 2.5%;
-    box-shadow: 10px 10px;
+.hyperlink {
+    color: darkblue;
 }

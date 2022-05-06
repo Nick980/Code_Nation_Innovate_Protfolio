@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat+Alternates:900');
+
+* {
+    box-sizing: border-box;
+}
+
+.container {
+    /* displayer: flex sets flex box */
+    /* flex flow condenses display and flex wrap */
+    display: flex;
+    justify-content: center;
+    min-height: 100vh;
+    /* flex-direction: row; */
+    /* flex-wrap: wrap; keeps width value, will keep on row as long as possible */
+    /* flex-wrap: wrap;     */
+    flex-flow: column;                        
+}
+
+.box {
+    color: white;
+    font-size: 100px;
+    font-family: 'Montserrat Alternates', sans-serif;
+    text-align: center;
+    padding: 15px;
+    /* width sets maximum width but flexbox will resize to fit browser */
+    width: 400px;
+
+}
+
+/* Colours for each box */
+
+.box1 { background: #eccc68; }
+.box2 { background: #ff6348; }
+.box3 { background: #ff7f50; }
+.box4 { background: #ff4757; }
+/* order can change where an element appears in the container */
+.box5 { background: #f1c40f; order: 1;}
+.box6 { background: #e67e22; }
+.box7 { background: #2ed573; }
+.box8 { background: #1e90ff; }
+.box9 { background: #c56cf0; }
+.box10 { background: #18dcff; }
