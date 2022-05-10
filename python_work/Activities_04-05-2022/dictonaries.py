@@ -51,16 +51,59 @@
 
 #Activity 2
 
-country_dict = {
-    "United Kingdom": "London",
-    "France": "Paris",
-    "Germany": "Berlin",
-    "Spain": "Madrid",
-    "Italy": "Rome"
+# country_dict = {
+#     "United Kingdom": "London",
+#     "France": "Paris",
+#     "Germany": "Berlin",
+#     "Spain": "Madrid",
+#     "Italy": "Rome"
+# }
+
+# country_dict.setdefault("Ireland", "Dublin")
+# country_dict.setdefault("Ukraine", "Kyiv")
+
+# for i, value in country_dict.items():
+#     print(i, ' : ', value)
+
+#Activity 2
+
+song1 = {
+    "artist": "The Dandy Warhols",
+    "song_name":  "Bohemian Like You",
+    "genre": "Pop/Rock",
+    "release_year": 2000
 }
 
-country_dict.setdefault("Ireland", "Dublin")
-country_dict.setdefault("Ukraine", "Kyiv")
+song2 = {
+    "artist": "Rag n Bone Man",
+    "song_name": "Arrrow",
+    "genre": "Blues",
+    "release_year": 2017
+}
 
-for i, value in country_dict.items():
-    print(i, ' : ', value)
+song3 = {
+    "artist": "Rag n Bone Man",
+    "song_name": "Human",
+    "genre": "Blues",
+    "release_year": 2017
+}
+
+song4 = {
+    "artist": "Stereophonics",
+    "song_name": "Indian Summer" ,
+    "genre": "Pop/Rock",
+    "release_year": 2013
+}
+
+fav_songs = [song1, song2, song3]
+
+print(fav_songs)
+
+fav_songs.append(song4)
+
+print(fav_songs)
+
+for each_dict in fav_songs:
+    print("\n")
+    for dict_value in each_dict.values():
+        print(dict_value)
