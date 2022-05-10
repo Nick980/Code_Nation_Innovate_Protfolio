@@ -3,4 +3,27 @@
 {% block content %}
 <h1>This is the about page</h1>
 <p>custom homepage content</p>
+
+<h3>These are my favorite artists</h3>
+{% for each_band in bands %}
+<h1>{{ each_band }}</h1>
+{% endfor %}
+
+{% if "radiohead" in bands %}
+<h1>{{  bands[0] }}</h1>
+{% else %}
+{% for x in bands %}
+<h3>{{ x }}</h3>
+{% endfor %}
+{% endif %}
+
+<form action="/about" method="POST">
+    <input type="text" name="add_band" id="band_add" placeholder="Enter the band you wish to add!">
+    <button type="sumbit" style="display: none;">Submit</button>
+</form>
+<form action="/about" method="POST">
+    <input type="text" name="remove_band" id="remove_band" placeholder="Enter the band you wish to remove!">
+    <button type="sumbit" style="display: none;">Submit</button>
+</form>
+
 {% endblock %}

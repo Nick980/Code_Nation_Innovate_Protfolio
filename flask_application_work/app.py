@@ -1,18 +1,8 @@
-from flask import Flask, render_template
+from flask import Flask, render_template, Blueprint, blueprints
+from views import my_view
 
 app = Flask(__name__)
-
-@app.route("/")
-def home():
-    return render_template("home.html")
-
-@app.route("/contact")
-def contact():
-    return render_template("contact.html")
-
-@app.route("/about")
-def about():
-    return render_template("about.html")
+app.register_blueprint(my_view)
 
 if __name__ =="__main__":
     app.run(debug=True, port=8000)
