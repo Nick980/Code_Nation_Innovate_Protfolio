@@ -32,6 +32,3 @@ for dict_i in music_list:
 
 def add_to_list(band):
     fave_bands.append(band)
-    
-def del_from_list(band):
-    fave_bands.remove(band)

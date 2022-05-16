@@ -1,0 +1,10 @@
+{% extends 'base.html' %}                                                                           <!--path to base.html, structure can be transfered across multiple pages-->
+
+{% block content %}                                                                                 <!--start of page content-->
+<body>
+    <h1>404 ERROR</h1>
+    <p>Error return - {{ e }}</p>                                                                   <!--shows error code information to user-->
+
+    <button onclick= "location.href='/'" class="example-button">Return to Main Page</button>        <!--button to return user to index.html-->
+</body>
+{% endblock %}                                                                                      <!--end of page content-->
