@@ -1,0 +1,85 @@
+.desktop, .mobile {
+    display: none;
+}
+
+@media (orientation: portrait) {
+    body {
+        background-color: black;
+    }
+    .mobile {
+        display: inline-block;
+        color: white;
+        background-color: gray;
+        font-size: 0.25em;
+        padding: 5%;
+    }
+    .title {
+        color: white;
+        background-color: gray;
+        text-align: center;
+        padding: 5%;
+        font-size: 2.5em;
+    }
+    .subtitle {
+        color: white;
+        background-color: gray;
+        text-align: center;
+        padding: 5%;
+        font-size: 1em;
+        }
+    h3 {
+        text-align: center;
+        color: white;
+        background-color: gray;
+        font-size: 1em;
+        padding: 5%;
+    }
+    p {
+        text-align: left;
+        color: white;
+        background-color: gray;
+        font-size: 1em;
+        padding: 5%;
+    }
+}
+
+@media (orientation: landscape) {
+    body {
+        background-color: white;
+    }
+    .desktop {
+        display: inline-block;
+        color: black;
+        background-color: lightgray;
+        font-size: 0.25em;
+        padding: 5%;
+    }
+    .title {
+        color: black;
+        background-color: lightgray;
+        text-align: center;
+        padding: 5%;
+        font-size: 2.5em;
+    }
+    .subtitle {
+        color: black;
+        background-color: lightgray;
+        text-align: center;
+        padding: 5%;
+        font-size: 1em;
+        }
+    h3 {
+        text-align: center;
+        color: black;
+        background-color: lightgray;
+        font-size: 1em;
+        padding: 5%;
+    }
+    p {
+        text-align: left;
+        color: black;
+        background-color: lightgray;
+        font-size: 1em;
+        padding: 5%;
+    }
+}
