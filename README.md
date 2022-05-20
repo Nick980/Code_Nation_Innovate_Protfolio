@@ -12,3 +12,6 @@ https://trello.com/b/vvKZkztw/nick-l3-innovate
 
 Link to deployed project (Heroku)
 https://level3-activity.herokuapp.com/
+
+Link to project github
+https://github.com/Nick980/code_nation_full_stack_project
